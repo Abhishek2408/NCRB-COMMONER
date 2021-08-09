@@ -167,7 +167,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
             statement.requestFocus();
             return;
         }
-       Fir_submit fir_s = new Fir_submit(person_name,email_id,person_phno,suspected_person,timef,datef,localityf,fir_statement);
+       Fir_submit fir_s = new Fir_submit(person_name,email_id,person_phno,suspected_person,timef,datef,localityf,fir_statement,status);
         FirebaseDatabase.getInstance().getReference().child("FIR Records").push().setValue(fir_s).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
