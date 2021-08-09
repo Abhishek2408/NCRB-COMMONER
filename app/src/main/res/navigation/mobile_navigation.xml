@@ -22,4 +22,11 @@
         android:name="com.example.ncrbcommoner.ui.Appointment.AppointmentFragment"
         android:label="@string/menu_apt"
         tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.ncrbcommoner.ui.Notifications.NotificationsFragment"
+        android:label="@string/menu_notify"
+        tools:layout="@layout/fragment_notifications" />
+
 </navigation>

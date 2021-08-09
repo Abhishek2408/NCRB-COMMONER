@@ -11,6 +11,7 @@
     <string name="menu_fir">FIR</string>
     <string name="menu_noc">NOC</string>
     <string name="menu_apt">Appointment</string>
+    <string name="menu_notify">Notifications</string>
     <string name="title_activity_user_nav">user_nav</string>
     <string name="login">Login</string>
     <string name="enter_phone_number">Enter Phone Number</string>
@@ -25,5 +26,7 @@
     <string name="fir">FIR</string>
     <string name="noc">NOC</string>
     <string name="appointment">Appointment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
