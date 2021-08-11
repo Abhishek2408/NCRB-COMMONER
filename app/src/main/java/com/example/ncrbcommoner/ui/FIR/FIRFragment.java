@@ -124,7 +124,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
         String suspected_person = suspect_name.getText().toString().trim();
         String localityf = locality.getText().toString().trim();
         String fir_statement = statement.getText().toString().trim();
-        String status = "no";
+        String status = "Disapproved";
 
         //Validating Data
         if(person_name.isEmpty()) {
@@ -168,7 +168,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
             return;
         }
        Fir_submit fir_s = new Fir_submit(person_name,email_id,person_phno,suspected_person,timef,datef,localityf,fir_statement,status);
-        FirebaseDatabase.getInstance().getReference().child("FIR Records").push().setValue(fir_s).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference().child("Commoner Records").push().setValue(fir_s).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {

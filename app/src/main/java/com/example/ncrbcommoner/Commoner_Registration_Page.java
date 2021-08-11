@@ -106,7 +106,7 @@ public class Commoner_Registration_Page extends AppCompatActivity implements Vie
                             User user = new User(username,phone,email,password);
                             //creating instance and adding data to child "user"
 
-                            FirebaseDatabase.getInstance().getReference("Users")
+                            FirebaseDatabase.getInstance().getReference("Users Commoner")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

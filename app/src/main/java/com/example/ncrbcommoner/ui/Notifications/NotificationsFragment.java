@@ -45,7 +45,7 @@ public class NotificationsFragment extends Fragment {
 
 
 
-        mbase = FirebaseDatabase.getInstance().getReference("Users");
+        mbase = FirebaseDatabase.getInstance().getReference("Users Commoner");
 
         RecyclerView recyclerView = root.findViewById(R.id.recycleview_notify);
         recyclerView.setHasFixedSize(true);
