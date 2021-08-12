@@ -10,14 +10,42 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/enter_full_name"
+            android:id="@+id/edit_name"
+            android:textAlignment="center"
+            android:textColorHint="#797985"
+            android:background="@drawable/edittxt_commonerlogin"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="57dp"
+            android:background="@drawable/edittxt_commonerlogin"
+            android:hint="Enter Number"
+            android:textAlignment="center"
+            android:textColorHint="#797985" />
+
     <TextView
         android:id="@+id/text_nameofperson"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:text="Select Name of Person:"
         android:textSize="20dp"
+        android:layout_below="@+id/edit_number"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="40dp" />
 
         <Spinner
             android:layout_width="300dp"
@@ -38,14 +66,14 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/person_spinner"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="40dp"/>
 
         <EditText
-            android:lines="4"
+            android:lines="3"
             android:gravity="top|left"
             android:id="@+id/reason_edit"
             android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_height="120dp"
             android:layout_below="@+id/reason_txt"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
@@ -55,6 +83,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="match_parent"
+            android:id="@+id/btn_ask"
             android:text="Ask"
             android:layout_below="@+id/reason_edit"
             android:layout_marginTop="50dp"

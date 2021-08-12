@@ -25,10 +25,6 @@ public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolde
     private List<User> myListData;
    Context context;
 
-    public  NotifyAdapter(ViewGroup view){
-        super();
-        context = view.getContext();
-    }
 
     public NotifyAdapter(List<User> myListData){
         this.myListData = myListData;
@@ -74,6 +70,7 @@ public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolde
 
         public ViewHolder(View itemView) {
             super(itemView);
+            context = itemView.getContext();
             this.username = itemView.findViewById(R.id.username);
             this.email = itemView.findViewById(R.id.email);
             this.relativeLayout = itemView.findViewById(R.id.relativeLayout);

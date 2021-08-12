@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Switch;
@@ -34,7 +35,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
 
     private FragmentFirBinding binding;
     private int mHour,mMinute, mYear, mMonth, mDay;
-    String evidence;
+    String evidence="";
     EditText name, email , phno ,time , date , suspect_name, locality , statement;
     Button timebtn , datebtn, submit;
     Calendar c,c1;
@@ -66,7 +67,17 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
         timebtn.setOnClickListener(this);
         datebtn.setOnClickListener(this);
         submit.setOnClickListener(this);
-        ev.setOnClickListener(this);
+        ev.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    evidence = "Yes";
+                }
+                else{
+                    evidence = "No";
+                }
+            }
+        });
 
         return root;
 
@@ -167,7 +178,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
             statement.requestFocus();
             return;
         }
-       Fir_submit fir_s = new Fir_submit(person_name,email_id,person_phno,suspected_person,timef,datef,localityf,fir_statement,status);
+       Fir_submit fir_s = new Fir_submit(person_name,email_id,person_phno,suspected_person,timef,datef,localityf,fir_statement,evidence,status);
         FirebaseDatabase.getInstance().getReference().child("Commoner Records").push().setValue(fir_s).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

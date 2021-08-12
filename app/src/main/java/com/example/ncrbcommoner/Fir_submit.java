@@ -1,7 +1,7 @@
 package com.example.ncrbcommoner;
 
 public class Fir_submit {
-    String name,email,phone,suspect,time,date,area,statement,evid,status;
+    String name,email,phone,suspect,time,date,area,statement,evidence,status;
 
     public String getStatus() { return status; }
 
@@ -71,15 +71,15 @@ public class Fir_submit {
         this.statement = statement;
     }
 
-    public String getEvid() {
-        return evid;
+    public String getEvidence() {
+        return evidence;
     }
 
-    public void setEvid(String evid) {
-        this.evid = evid;
+    public void setEvidence(String evidence) {
+        this.evidence = evidence;
     }
 
-    public Fir_submit(String name,String email, String phone, String suspect, String time, String date, String area, String statement, String status) {
+    public Fir_submit(String name,String email, String phone, String suspect, String time, String date, String area, String statement, String evidence, String status) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -88,7 +88,9 @@ public class Fir_submit {
         this.date = date;
         this.area = area;
         this.statement = statement;
+        this.evidence = evidence;
         this.status = status;
+
 
     }
 

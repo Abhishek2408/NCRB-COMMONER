@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="@drawable/notify_textbox"
+    android:background="@color/white"
     android:id="@+id/relativeLayout">
 
     <TextView
@@ -13,8 +13,7 @@
         android:id="@+id/textViewname"
         android:text="Name:"
         android:padding="4dp"
-        android:gravity="center_vertical"
-        android:textSize="17dp"/>
+        android:gravity="center_vertical" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,8 +23,7 @@
         android:padding="4dp"
         android:text="text"
         android:layout_toEndOf="@+id/textViewname"
-        android:gravity="center_vertical"
-        android:textSize="17dp"/>
+        android:gravity="center_vertical"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,8 +35,7 @@
         android:layout_below="@+id/textViewname"
         android:text="Email:"
         android:padding="4dp"
-        android:gravity="center_vertical"
-        android:textSize="17dp"/>
+        android:gravity="center_vertical"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,7 +48,6 @@
         android:text="text"
         android:layout_below="@+id/textViewname"
         android:layout_toEndOf="@+id/textViewemail"
-        android:gravity="center_vertical"
-        android:textSize="17dp"/>
+        android:gravity="center_vertical"/>
 
 </RelativeLayout>
