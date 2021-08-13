@@ -34,13 +34,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AppointmentFragment extends Fragment implements AdapterView.OnItemSelectedListener {
+public class AppointmentFragment extends Fragment {
 
    private FragmentAppointmentBinding binding;
    EditText commonername, commonernumber, reason;
    Button ask;
    Spinner select_person;
-   String username;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -61,6 +61,13 @@ public class AppointmentFragment extends Fragment implements AdapterView.OnItemS
 
 
         List<String> police_users = new ArrayList<String>();
+        //Setting list to spinner
+
+        ArrayAdapter ad = new ArrayAdapter(this.getActivity(), android.R.layout.simple_spinner_item, police_users);
+        ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        select_person.setAdapter(ad);
+
+        //fetching user name in spinner
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -70,8 +77,10 @@ public class AppointmentFragment extends Fragment implements AdapterView.OnItemS
                 for (DataSnapshot usersnap : snapshot.getChildren()){
                     String usersname = usersnap.child("f_name").getValue(String.class);
                     String userlname = usersnap.child("l_name").getValue(String.class);
-                    police_users.add(usersname+" "+userlname);
+                    String user = usersname+" "+userlname;
+                    ad.add(user);
                 }
+                ad.notifyDataSetChanged();
             }
 
             @Override
@@ -80,20 +89,23 @@ public class AppointmentFragment extends Fragment implements AdapterView.OnItemS
             }
         });
 
-        select_person.setOnItemSelectedListener(this);
-        ArrayAdapter ad = new ArrayAdapter(this.getActivity(), android.R.layout.simple_spinner_item, police_users);
-        ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        select_person.setAdapter(ad);
+
 
         ask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String username = select_person.getSelectedItem().toString();
                 String comm_name = commonername.getText().toString();
                 String comm_no = commonernumber.getText().toString();
                 String rea_son = reason.getText().toString();
-                String  status = "Reject";
+                String status = "Reject";
 
                 if(comm_name.isEmpty()) {
+                    commonername.setError("Full name is required!");
+                    commonername.requestFocus();
+                    return;
+                }
+                if(username.isEmpty()) {
                     commonername.setError("Full name is required!");
                     commonername.requestFocus();
                     return;
@@ -103,6 +115,8 @@ public class AppointmentFragment extends Fragment implements AdapterView.OnItemS
                     commonernumber.requestFocus();
                     return;
                 }
+
+                //Inserting data into Commoner Appointment Records
 
                 Appoint_data appoint_data = new Appoint_data(username,comm_name,comm_no,rea_son,status);
                 FirebaseDatabase.getInstance().getReference().child("Commoner Appointment Records").push().setValue(appoint_data).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -128,17 +142,4 @@ public class AppointmentFragment extends Fragment implements AdapterView.OnItemS
         binding = null;
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-        username = select_person.getSelectedItem().toString();
-        select_person.setSelection(position);
-
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
 }

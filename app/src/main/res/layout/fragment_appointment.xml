@@ -52,7 +52,7 @@
             android:layout_height="50dp"
             android:id="@+id/person_spinner"
             android:layout_below="@+id/text_nameofperson"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
             android:background="@drawable/edittxt_commonerlogin"
@@ -70,7 +70,7 @@
 
         <EditText
             android:lines="3"
-            android:gravity="top|left"
+            android:textAlignment="center"
             android:id="@+id/reason_edit"
             android:layout_width="300dp"
             android:layout_height="120dp"
