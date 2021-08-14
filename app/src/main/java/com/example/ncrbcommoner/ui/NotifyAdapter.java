@@ -22,13 +22,14 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolder>{
-    private List<User> myListData;
+    private List<Fir_getNotify> myListData;
    Context context;
 
 
-    public NotifyAdapter(List<User> myListData){
+    public NotifyAdapter(List<Fir_getNotify> myListData){
         this.myListData = myListData;
     }
+
 
 
     @NonNull
@@ -42,14 +43,13 @@ public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
-        final User user = myListData.get(position);
-        holder.username.setText(user.getUsername());
-        holder.email.setText(user.getEmail());
+        final Fir_getNotify fir_getNotify = myListData.get(position);
+        holder.status.setText(fir_getNotify.getStatus());
+        holder.statement.setText(fir_getNotify.getStatement());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username1 = user.getUsername();
-                Toast.makeText(view.getContext(),"Clicked on: "+username1,Toast.LENGTH_SHORT).show();
+                String username1 = fir_getNotify.getName();
                 Intent i = new Intent(context,ShowActivity.class);
                 i.putExtra("result",username1);
                 context.startActivity(i);
@@ -65,14 +65,14 @@ public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolde
 
     public class ViewHolder extends  RecyclerView.ViewHolder{
 
-        public TextView username, email;
+        public TextView status, statement;
         public RelativeLayout relativeLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
             context = itemView.getContext();
-            this.username = itemView.findViewById(R.id.username);
-            this.email = itemView.findViewById(R.id.email);
+            this.status = itemView.findViewById(R.id.status);
+            this.statement = itemView.findViewById(R.id.statement_txt);
             this.relativeLayout = itemView.findViewById(R.id.relativeLayout);
         }
     }
