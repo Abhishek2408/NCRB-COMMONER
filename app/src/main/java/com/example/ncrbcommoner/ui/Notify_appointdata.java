@@ -9,6 +9,8 @@ public class Notify_appointdata {
     String date;
     String time;
 
+    public Notify_appointdata(){}
+
     public Notify_appointdata(String user, String commoner_name, String commoner_no, String reason, String status, String date, String time) {
         this.user = user;
         this.commoner_name = commoner_name;

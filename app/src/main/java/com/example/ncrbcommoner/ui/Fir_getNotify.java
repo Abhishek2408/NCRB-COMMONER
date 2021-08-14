@@ -3,6 +3,8 @@ package com.example.ncrbcommoner.ui;
 public class Fir_getNotify {
     String name,email,phone,statement,suspect,area,date,time,status,evid;
 
+    public  Fir_getNotify(){}
+
     public Fir_getNotify(String name, String email, String phone, String statement, String suspect, String area, String date, String time, String status, String evid) {
         this.name = name;
         this.email = email;
