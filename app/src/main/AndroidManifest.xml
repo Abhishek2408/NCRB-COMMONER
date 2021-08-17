@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NCRBCOMMONER">
-        <activity android:name=".ui.ShowActivity"></activity>
+        <activity android:name=".ui.ShowFirActivity"></activity>
+        <activity android:name=".ui.ShowActivity" />
         <activity
             android:name=".Nav_mainActivity"
             android:label="@string/title_activity_nav_main"
-            android:theme="@style/Theme.NCRBCOMMONER.NoActionBar"></activity>
+            android:theme="@style/Theme.NCRBCOMMONER.NoActionBar" />
         <activity android:name=".Commoner_Registration_Page" />
         <activity android:name=".Commoner_Login_Page" />
         <activity android:name=".MainActivity">

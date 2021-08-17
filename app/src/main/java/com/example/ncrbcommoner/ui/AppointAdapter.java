@@ -46,9 +46,9 @@ public class AppointAdapter extends RecyclerView.Adapter<AppointAdapter.viewHold
             public void onClick(View view) {
                 String username1 = appointdata.getCommoner_name();
                 Toast.makeText(view.getContext(),"Clicked on: "+username1,Toast.LENGTH_SHORT).show();
-                /*Intent i = new Intent(context,ShowActivity.class);
+                Intent i = new Intent(context,ShowActivity.class);
                 i.putExtra("result",username1);
-                context.startActivity(i);*/
+                context.startActivity(i);
             }
         });
 
