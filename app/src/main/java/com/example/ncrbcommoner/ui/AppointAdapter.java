@@ -41,11 +41,11 @@ public class AppointAdapter extends RecyclerView.Adapter<AppointAdapter.viewHold
         final Notify_appointdata appointdata = apptlistdata.get(position);
         holder.status.setText(appointdata.getStatus());
         holder.user.setText(appointdata.getUser());
+        holder.name.setText(appointdata.getCommoner_name());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String username1 = appointdata.getCommoner_name();
-                Toast.makeText(view.getContext(),"Clicked on: "+username1,Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(context,ShowActivity.class);
                 i.putExtra("result",username1);
                 context.startActivity(i);
@@ -61,13 +61,14 @@ public class AppointAdapter extends RecyclerView.Adapter<AppointAdapter.viewHold
 
     public class viewHolder extends  RecyclerView.ViewHolder{
         public RelativeLayout relativeLayout;
-        public TextView user,status;
+        public TextView user,status,name;
 
         public viewHolder(View itemView) {
             super(itemView);
             context = itemView.getContext();
             this.user = itemView.findViewById(R.id.user);
             this.status = itemView.findViewById(R.id.status);
+            this.name = itemView.findViewById(R.id.namebox);
             this.relativeLayout = itemView.findViewById(R.id.relativeLayout2);
         }
     }

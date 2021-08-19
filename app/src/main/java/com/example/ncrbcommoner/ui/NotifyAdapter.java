@@ -50,7 +50,7 @@ public class NotifyAdapter extends  RecyclerView.Adapter<NotifyAdapter.ViewHolde
             @Override
             public void onClick(View view) {
                 String username1 = fir_getNotify.getName();
-                Intent i = new Intent(context,ShowActivity.class);
+                Intent i = new Intent(context,ShowFirActivity.class);
                 i.putExtra("result",username1);
                 context.startActivity(i);
             }

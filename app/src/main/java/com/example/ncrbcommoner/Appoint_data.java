@@ -7,6 +7,8 @@ public class Appoint_data {
     String reason;
     String status;
 
+    public Appoint_data(){}
+
     public Appoint_data(String police_user, String commoner_name, String commoner_no, String reason, String status) {
         this.user = police_user;
         this.commoner_name = commoner_name;

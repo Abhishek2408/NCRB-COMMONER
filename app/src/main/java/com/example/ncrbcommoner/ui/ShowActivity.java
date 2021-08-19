@@ -68,12 +68,14 @@ public class ShowActivity extends AppCompatActivity {
                         tv_reason.setText(u1.getReason());
 
                         //date
-                        tv_date = findViewById(R.id.date_edit);
-                        tv_date.setText(u1.getDate());
+                        tv_date = findViewById(R.id.date_ed);
+                        String d = u1.getDate();
+                        tv_date.setText(d);
 
                         //time
-                        tv_time = findViewById((R.id.time_edit));
-                        tv_time.setText(u1.getTime());
+                        tv_time = findViewById((R.id.time_ed));
+                        String t = u1.getTime();
+                        tv_time.setText(t);
                     }
 
                 }

@@ -124,6 +124,8 @@ public class AppointmentFragment extends Fragment {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(getContext(),"Appointment Placed",Toast.LENGTH_SHORT).show();
+                            commonername.setText("");
+                            commonernumber.setText("");
                         }else {
                             Toast.makeText(getContext(),"Something went wrong",Toast.LENGTH_SHORT).show();
                         }

@@ -67,6 +67,7 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
         timebtn.setOnClickListener(this);
         datebtn.setOnClickListener(this);
         submit.setOnClickListener(this);
+        //switch button for evidence
         ev.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -184,6 +185,10 @@ public class FIRFragment extends Fragment  implements View.OnClickListener{
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getContext(),"FIR Registered",Toast.LENGTH_SHORT).show();
+                    name.setText("");
+                    email.setText("");
+                    phno.setText("");
+                    statement.setText("");
                 }else {
                     Toast.makeText(getContext(),"Something went wrong",Toast.LENGTH_SHORT).show();
                 }
