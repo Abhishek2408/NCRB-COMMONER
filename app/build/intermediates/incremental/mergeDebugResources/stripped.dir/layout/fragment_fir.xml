@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FIR.FIRFragment">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#ffe6e6">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_full_name"
+        android:id="@+id/edit_name"
+        android:textAlignment="center"
+        android:textColorHint="#797985"
+        android:background="@drawable/edittxt_commonerlogin"
+        android:layout_marginTop="50dp"/>
+
+       <EditText
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+           android:hint="@string/enter_email_id"
+           android:id="@+id/edit_email"
+           android:layout_below="@+id/edit_name"
+           android:textAlignment="center"
+           android:textColorHint="#797985"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:layout_marginTop="40dp"/>
+
+       <EditText
+           android:id="@+id/edit_number"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/edit_email"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginStart="54dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginEnd="57dp"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:hint="Enter Number"
+           android:textAlignment="center"
+           android:textColorHint="#797985" />
+
+       <EditText
+           android:id="@+id/time_edit"
+           android:layout_width="205dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/edit_number"
+           android:layout_alignParentStart="true"
+           android:layout_marginStart="60dp"
+           android:layout_marginLeft="60dp"
+           android:layout_marginTop="38dp"
+           android:background="@drawable/left_element"
+           android:hint="Time"
+           android:textAlignment="center"
+           android:textColorHint="#797985" />
+
+       <Button
+           android:id="@+id/time_btn"
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/edit_number"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginStart="261dp"
+           android:layout_marginTop="38dp"
+           android:layout_marginEnd="49dp"
+           android:background="@drawable/right_element"
+           android:text="Set Time"
+           android:textColor="@color/white" />
+
+       <EditText
+           android:id="@+id/date_edit"
+           android:layout_width="205dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/time_edit"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="60dp"
+           android:layout_marginTop="40dp"
+           android:hint="Date"
+           android:textColorHint="#797985"
+           android:background="@drawable/left_element"
+           android:textAlignment="center" />
+
+       <Button
+           android:id="@+id/date_btn"
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/time_btn"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginStart="261dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginEnd="50dp"
+           android:background="@drawable/right_element"
+           android:text="Set Date"
+           android:textColor="@color/white" />
+
+       <EditText
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/edit_suspect"
+           android:textAlignment="center"
+           android:textColorHint="#797985"
+           android:layout_below="@+id/date_btn"
+           android:hint="Enter Suspect Name"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:layout_marginTop="40dp"/>
+
+       <EditText
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+           android:hint="Enter Locality"
+           android:id="@+id/locality_edit"
+           android:textAlignment="center"
+           android:textColorHint="#797985"
+           android:layout_below="@+id/edit_suspect"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/statement_txt"
+        android:text="Statement:"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locality_edit"
+        android:layout_marginTop="40dp"/>
+
+      <EditText
+          android:id="@+id/statement_edit"
+          android:layout_width="300dp"
+          android:layout_height="150dp"
+          android:layout_below="@+id/statement_txt"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="56dp"
+          android:layout_marginTop="54dp"
+          android:layout_marginEnd="55dp"
+          android:background="@drawable/edittxt_commonerlogin"
+          android:gravity="top|left"
+          android:lines="4"
+          android:textColorHint="#797985" />
+
+       <Switch
+           android:id="@+id/evidence_swap"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Evidence Available"
+           android:layout_marginHorizontal="50dp"
+           tools:ignore="UseSwitchCompatOrMaterialXml"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:layout_marginTop="40dp"
+           android:textSize="16dp"
+           android:padding="15dp"
+           android:ems="18"
+           android:thumb="@drawable/thumb_style"
+           android:layout_below="@+id/statement_edit"
+           android:textOff="No"
+           android:textOn="Yes"
+           android:track="@drawable/track_style"/>
+
+       <TextView
+           android:id="@+id/ev_pointer"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/statement_edit"
+           android:layout_alignParentStart="true"
+           android:layout_marginHorizontal="50dp"
+           android:layout_marginStart="50dp"
+           android:layout_marginTop="49dp"
+           android:background="@drawable/edittxt_commonerlogin"
+           android:text="Evidence should be submitted in person"
+           android:textStyle="bold"
+           android:visibility="invisible" />
+
+       <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/evidence_swap"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/submit_firBtn"
+        android:textColor="@color/white"
+        android:text="@string/submit_btn"
+        android:background="@drawable/btn_red2"
+        android:layout_marginBottom="70dp"/>
+
+   </RelativeLayout>
+</ScrollView>

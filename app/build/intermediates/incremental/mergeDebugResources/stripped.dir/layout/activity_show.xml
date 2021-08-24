@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regular2red"
+    tools:context=".ui.ShowActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notify_textbox"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Person:"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/txt1" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="User:"
+        android:layout_below="@id/txt1"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/user_edit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_edit"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/txt2"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Reason:"
+        android:layout_below="@id/txt2"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/reason_edit"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/user_edit"
+        android:layout_toRightOf="@+id/txt3"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Date:"
+        android:layout_below="@id/txt3"
+        android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/date_ed"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reason_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/txt4"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="16dp" />
+
+        <TextView
+        android:id="@+id/txt5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Time:"
+        android:layout_below="@id/txt4"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_ed"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/date_ed"
+        android:layout_toRightOf="@+id/txt5"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_ask"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time_ed"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_red2"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

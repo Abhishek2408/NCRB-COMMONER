@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/notify_textbox"
+    android:id="@+id/relativeLayout2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/textViewuser"
+        android:text="Person To meet:"
+        android:padding="4dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/user"
+        android:padding="4dp"
+        android:text="text"
+        android:layout_toEndOf="@+id/textViewuser"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textViewstatus"
+        android:layout_below="@+id/textViewuser"
+        android:text="Status:"
+        android:padding="4dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/status"
+        android:padding="4dp"
+        android:text="text"
+        android:layout_below="@+id/textViewuser"
+        android:layout_toEndOf="@+id/textViewstatus"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textcommname"
+        android:layout_below="@+id/textViewstatus"
+        android:text="Name:"
+        android:padding="4dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/namebox"
+        android:padding="4dp"
+        android:text="text"
+        android:layout_below="@+id/textViewstatus"
+        android:layout_toEndOf="@+id/textcommname"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

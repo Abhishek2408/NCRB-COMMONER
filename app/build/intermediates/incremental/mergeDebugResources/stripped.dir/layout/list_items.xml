@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/notify_textbox"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/textViewstatus"
+        android:text="Status:"
+        android:padding="4dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/status"
+        android:padding="4dp"
+        android:text="text"
+        android:layout_toEndOf="@+id/textViewstatus"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textViewStatement"
+        android:layout_below="@+id/textViewstatus"
+        android:text="Statement:"
+        android:padding="4dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/statement_txt"
+        android:padding="4dp"
+        android:text="text"
+        android:layout_below="@+id/textViewstatus"
+        android:layout_toEndOf="@+id/textViewStatement"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>
