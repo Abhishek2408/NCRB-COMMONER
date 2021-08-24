@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_show.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_nav_main.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_nav_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_fir.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_show_fir.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_appoint_items.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\list_appoint_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_commoner_registration_page.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_commoner_registration_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\app_bar_nav_main.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\app_bar_nav_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header_nav_main.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\nav_header_nav_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_items.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\list_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_fir.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\fragment_fir.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_appointment.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\fragment_appointment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_nav_main.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\content_nav_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_commoner_login_page.xml",
+        "source": "C:\\Users\\Sanchit Jadhav\\Documents\\Ncrb-Commoner\\app\\src\\main\\res\\layout\\activity_commoner_login_page.xml"
+    }
+]
